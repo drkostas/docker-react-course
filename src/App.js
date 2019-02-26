@@ -10,7 +10,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1> Lets get this party starteeed!</h1>
           <p>
-            Volume References on Docker babyyyy
+            I was changed on the feature branch. Yay
           </p>
           <a
             className="App-link"

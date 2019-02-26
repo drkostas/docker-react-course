@@ -8,8 +8,9 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
+          <h1> Lets get this party starteeed!</h1>
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            Volume References on Docker babyyyy
           </p>
           <a
             className="App-link"

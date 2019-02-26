@@ -1,0 +1,12 @@
+FROM node:alpine
+
+WORKDIR '/app'
+
+COPY package.json .
+RUN npm install
+
+# It's redundant when using Docker Volumes (References) 
+# but it's good to have it
+COPY . . 
+
+CMD ["npm", "run", "start"]

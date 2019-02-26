@@ -10,5 +10,6 @@
 
  # Next Phase
  FROM nginx
+ EXPOSE 80 # Required only for online servers like elasticbeastalk
  # Copy from first phase instead of the local folder
  COPY --from=builder /app/build /usr/share/nginx/html

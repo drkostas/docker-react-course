@@ -8,3 +8,16 @@ before_install:
 script:
   # the `-- --coverage` triggers the test to exit after finishing (with exit code)
   - docker run drkostas/docker-react-course npm run test -- --coverage
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-2"
+  app: "docker-react-course"
+  env: "DockerReactCourse-env"
+  bucket_name: "elasticbeanstalk-us-east-2-844347551258"
+  bucket_path: "docker-react-course"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: 
+    secure: "$AWS_SECRET_KEY"

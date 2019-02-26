@@ -1,8 +1,8 @@
  FROM node:alpine as builder
  WORKDIR '/app'
- COPY package.json .
+ COPY package*.json ./
  RUN npm install
- COPY . .
+ COPY ./ ./
  RUN npm run build
 # From this Phase we only keep build folder
 # So that we don't need to carry over the 
